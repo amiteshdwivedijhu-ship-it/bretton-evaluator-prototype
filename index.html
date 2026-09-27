@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evaluator: synthetic EDD quality packets</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">E</span>
+    <div>
+      <div class="brand-name">Evaluator</div>
+      <div class="brand-sub">Quality packets for agent runs · Workbench eval panel</div>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <span class="chip chip-info">Synthetic data only</span>
+    <button id="export-btn" class="btn">Export packet JSON</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="rail" id="rail"></aside>
+  <main class="main" id="main"></main>
+</div>
+
+<footer class="foot">
+  Unofficial prototype in Bretton's visual language, built from public materials only
+  (bretton.com, the Evaluator QA post, and the brand palette in the public site CSS).
+  Dimensions: Completeness, Groundedness (Claim support), Trajectory (Workflow process),
+  Format (Deliverable fitness). Every finding carries an evidence pointer to a claim,
+  source, or missing step. All subjects, traces, and sources are synthetic fiction for demonstration.
+</footer>
+
+<script src="runs.js"></script>
+<script src="evaluator.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
